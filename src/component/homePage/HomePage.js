@@ -10,7 +10,7 @@ function HomePage({setQuizCode, quizCode, setQuizData, setSelectedOption}) {
             <Header setQuizCode={setQuizCode} setQuizData={setQuizData} setSelectedOption={setSelectedOption} />
             <Content setQuizCode={setQuizCode} quizCode={quizCode} />
             <Footer />
-            <img className={'illustration'} src="people-asking-question.png" alt="illustration"/>
+            <img className={'illustration'} src="https://github.com/Alpha-911/Brainer/blob/main/public/people-asking-question.png?raw=true" alt="illustration"/>
         </div>
     )
 }

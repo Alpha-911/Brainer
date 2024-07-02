@@ -1,0 +1,109 @@
+.feedback-page {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 100vh;
+
+  .separationBar {
+    height: 0.5vh;
+    background: linear-gradient(45deg, #08aeea, #2af598);
+  }
+
+  .header {
+    display: flex;
+    flex-flow: column;
+    background: black;
+
+    img {
+      margin: 0 5vw;
+      height: 10vh;
+      cursor: pointer;
+    }
+  }
+
+  button {
+    height: 4rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    background: linear-gradient(45deg, #08aeea, #2af598);
+    cursor: pointer;
+  }
+
+  .feedback-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 87vh;
+    margin-bottom: 1rem;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+
+    h1 {
+      font-weight: bold;
+      margin: 0.5rem 0;
+    }
+    h3 {
+      font-weight: normal;
+      margin: 0.2rem 0;
+    }
+    h4 {
+      font-weight: lighter;
+    }
+
+    .separationBar {
+      height: 0.2vh;
+      width: 50vw;
+      background: linear-gradient(45deg, #08aeea, #2af598);
+    }
+
+    .starSelector {
+      display: flex;
+      font-size: 5rem;
+      cursor: pointer;
+    }
+
+    .feedback-category {
+      display: flex;
+      flex-flow: row;
+      margin-bottom: 2rem;
+      justify-content: space-between;
+      width: 35vw;
+
+      .category-button {
+        background: #d9d9d9;
+        width: 9rem;
+
+        &:hover,
+        &:active {
+          background: linear-gradient(45deg, #08aeea, #2af598);
+        }
+      }
+      .active {
+        background: linear-gradient(45deg, #08aeea, #2af598);
+      }
+    }
+
+    textarea {
+      resize: none;
+      margin: 2rem 0;
+      padding: 1rem;
+    }
+
+    .submit-button {
+      width: 45rem;
+    }
+  }
+
+  .success {
+    display: flex;
+    height: 84vh;
+    justify-content: center;
+    align-items: center;
+  }
+}

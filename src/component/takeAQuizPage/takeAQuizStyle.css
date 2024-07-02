@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+.separationBar {
+  height: 0.5vh;
+  background: linear-gradient(45deg, #08aeea, #2af598);
+}
+
+.header {
+  display: flex;
+  flex-flow: column;
+  position: sticky;
+  top: 0;
+  background: black;
+  z-index: 1;
+}
+.header .header-content {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+.header .header-content img {
+  height: 10vh;
+  cursor: pointer;
+}
+.header .header-content h1 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d9d9d9;
+  font-weight: lighter;
+}
+.header .header-content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-content a button {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+  height: 6vh;
+  width: 8vw;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+}
+.header .header-content a button:hover, .header .header-content a button:active {
+  background: linear-gradient(45deg, #08aeea, #2af598);
+}
+
+.loading-page {
+  display: flex;
+  height: 83vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found {
+  color: red;
+}
+
+.status-panel {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  gap: 0.1rem 0.1rem;
+  justify-content: space-between;
+  position: fixed;
+  background: #d9d9d9;
+  height: 80.5vh;
+  width: 15vw;
+  padding: 2rem;
+}
+.status-panel .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  margin: 0.5rem;
+  padding: 0.8rem;
+  height: 0.6rem;
+  border: 1px solid black;
+  border-radius: 2rem;
+}
+.status-panel .marked {
+  background: #3CBE58;
+  color: white;
+  border: none;
+}
+.status-panel .correct {
+  background: #3CBE58;
+  color: white;
+  border: none;
+}
+.status-panel .wrong {
+  background: #B92424;
+  color: white;
+  border: none;
+}
+
+.question-container {
+  display: flex;
+  flex-flow: column;
+  margin: 2rem 0 2rem 20rem;
+}
+.question-container .question-option {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  margin-bottom: 3rem;
+}
+.question-container .question-option .qno-question {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+.question-container .question-option .qno-question .qno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background: black;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 1rem 0 1rem 0;
+}
+.question-container .question-option .qno-question .qno p {
+  background: linear-gradient(45deg, #08aeea, #2af598);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+}
+.question-container .question-option .qno-question .question {
+  margin-left: 2rem;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+}
+.question-container .question-option .options {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  margin-left: 5rem;
+}
+.question-container .question-option .options input {
+  cursor: pointer;
+}
+.question-container .question-option .options .correct {
+  accent-color: #3CBE58;
+}
+.question-container .question-option .options label {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=takeAQuizStyle.css.map */

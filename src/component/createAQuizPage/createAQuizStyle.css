@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+.question-option-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 2rem;
+}
+.question-option-container .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.question-option-container .title input {
+  height: 2rem;
+  width: 83vw;
+  border: 2px solid #D9D9D9;
+  padding: 0 2rem;
+}
+.question-option-container .title input::placeholder {
+  color: #a9a9a9;
+}
+.question-option-container .question-option {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  margin-bottom: 3rem;
+  width: 87.5vw;
+}
+.question-option-container .question-option .qno-question {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+.question-option-container .question-option .qno-question .qno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background: black;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 1rem 0 1rem 0;
+}
+.question-option-container .question-option .qno-question .qno p {
+  background: linear-gradient(45deg, #08aeea, #2af598);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+}
+.question-option-container .question-option .qno-question .question {
+  margin-left: 2rem;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+}
+.question-option-container .question-option .options {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  margin-left: 5rem;
+}
+.question-option-container .question-option .options input {
+  cursor: pointer;
+}
+.question-option-container .question-option .options .correct {
+  accent-color: #3CBE58;
+}
+.question-option-container .question-option .options label {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+.question-option-container .input-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 85vw;
+  padding: 1rem;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(45deg, #08aeea, #2af598);
+}
+.question-option-container .input-container .input-question-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.question-option-container .input-container .input-question-container input {
+  height: 4rem;
+  width: 100%;
+  border: 2px solid #D9D9D9;
+  padding: 0 2rem;
+}
+.question-option-container .input-container .input-question-container input::placeholder {
+  color: #a9a9a9;
+}
+.question-option-container .input-container .input-option-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.question-option-container .input-container .input-option-container .option {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 30vw;
+  height: 2rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 2px solid #D9D9D9;
+}
+.question-option-container .input-container .input-option-container .option .option-input {
+  display: flex;
+  flex-flow: row;
+  width: 90%;
+}
+.question-option-container .input-container .input-option-container .option .option-input p {
+  margin: 1rem;
+}
+.question-option-container .input-container .input-option-container .option .option-input input {
+  width: 80%;
+  border: none;
+}
+.question-option-container .input-container .input-option-container .option .option-input input::placeholder {
+  color: #a9a9a9;
+}
+.question-option-container .input-container .input-option-container .option .selector {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  border: 2px solid #D9D9D9;
+  cursor: pointer;
+}
+.question-option-container .input-container .input-option-container .option .selector:hover, .question-option-container .input-container .input-option-container .option .selector:active {
+  border: 2px solid #3CBE58;
+}
+.question-option-container .input-container .input-option-container .option .active {
+  background: #3CBE58;
+  border: 2px solid #3CBE58;
+}
+.question-option-container .input-container button {
+  height: 3rem;
+  width: 8rem;
+  border: none;
+  border-radius: 0.8rem;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.finish-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 1rem;
+}
+.finish-container img {
+  height: 10rem;
+  margin: 5rem 2rem;
+}
+.finish-container h1 {
+  font-weight: lighter;
+}
+.finish-container .quiz-code {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.finish-container .quiz-code img {
+  height: 6rem;
+  margin: 2rem;
+}
+.finish-container .quiz-code h1 {
+  margin: 2rem;
+  font-weight: normal;
+}
+
+/*# sourceMappingURL=createAQuizStyle.css.map */

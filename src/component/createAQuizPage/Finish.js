@@ -13,7 +13,7 @@ function Finish({setQuizCode, setQuizData, setSelectedOption, generatedCode, isL
                     :
                     finished ?
                         <div className={'finish-container'}>
-                            <img src="tick-circle.svg" alt="tick-circle"/>
+                            <img src="https://raw.githubusercontent.com/Alpha-911/Brainer/a0b6c402c89c18c2a2e0badd893cea3614f3586d/public/tick-circle.svg" alt="tick-circle"/>
                             <h1>Quiz Successfully Created</h1>
                             <div className={'quiz-code'}>
                                 <img src="ticket.svg" alt=""/>

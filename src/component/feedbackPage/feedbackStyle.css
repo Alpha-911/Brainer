@@ -4,20 +4,6 @@
   justify-content: space-between;
   height: 100vh;
 }
-.feedback-page .separationBar {
-  height: 0.5vh;
-  background: linear-gradient(45deg, #08aeea, #2af598);
-}
-.feedback-page .header {
-  display: flex;
-  flex-flow: column;
-  background: black;
-}
-.feedback-page .header img {
-  margin: 0 5vw;
-  height: 10vh;
-  cursor: pointer;
-}
 .feedback-page button {
   height: 4rem;
   border: none;
@@ -28,6 +14,57 @@
   font-style: normal;
   background: linear-gradient(45deg, #08aeea, #2af598);
   cursor: pointer;
+}
+.feedback-page .header {
+  display: flex;
+  flex-flow: column;
+  position: sticky;
+  top: 0;
+  background: black;
+  z-index: 1;
+}
+.feedback-page .header .header-content {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+.feedback-page .header .header-content img {
+  height: 10vmin;
+  cursor: pointer;
+}
+@media screen and (min-width: 340px) and (max-width: 450px) {
+  .feedback-page .header .header-content img {
+    height: 15vmin;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 640px) {
+  .feedback-page .header .header-content img {
+    height: 12vmin;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .feedback-page .header .header-content img {
+    height: 12vmin;
+  }
+}
+@media screen and (min-width: 340px) and (max-width: 450px) {
+  .feedback-page .header .header-content {
+    height: 20vmin;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 640px) {
+  .feedback-page .header .header-content {
+    height: 15vmin;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .feedback-page .header .header-content {
+    height: 15vmin;
+  }
 }
 .feedback-page .feedback-container {
   display: flex;
@@ -44,22 +81,71 @@
   font-weight: bold;
   margin: 0.5rem 0;
 }
+@media screen and (min-width: 340px) and (max-width: 640px) {
+  .feedback-page .feedback-container h1 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .feedback-page .feedback-container h1 {
+    font-size: 3rem;
+  }
+}
 .feedback-page .feedback-container h3 {
   font-weight: normal;
   margin: 0.2rem 0;
 }
+@media screen and (min-width: 340px) and (max-width: 640px) {
+  .feedback-page .feedback-container h3 {
+    margin: 1rem 2rem;
+    font-size: 0.7rem;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .feedback-page .feedback-container h3 {
+    margin: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+}
 .feedback-page .feedback-container h4 {
   font-weight: lighter;
+}
+@media screen and (min-width: 340px) and (max-width: 640px) {
+  .feedback-page .feedback-container h4 {
+    margin: 0.5rem 2rem;
+    font-size: 0.6rem;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .feedback-page .feedback-container h4 {
+    margin: 0.5rem 2rem;
+    font-size: 1.2rem;
+  }
 }
 .feedback-page .feedback-container .separationBar {
   height: 0.2vh;
   width: 50vw;
   background: linear-gradient(45deg, #08aeea, #2af598);
 }
+@media screen and (min-width: 340px) and (max-width: 640px) {
+  .feedback-page .feedback-container .separationBar {
+    width: 90vmin;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .feedback-page .feedback-container .separationBar {
+    width: 80vmin;
+  }
+}
 .feedback-page .feedback-container .starSelector {
   display: flex;
   font-size: 5rem;
   cursor: pointer;
+}
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .feedback-page .feedback-container .starSelector {
+    font-size: 8rem;
+  }
 }
 .feedback-page .feedback-container .feedback-category {
   display: flex;
@@ -68,12 +154,39 @@
   justify-content: space-between;
   width: 35vw;
 }
+@media screen and (min-width: 340px) and (max-width: 640px) {
+  .feedback-page .feedback-container .feedback-category {
+    width: 80vmin;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .feedback-page .feedback-container .feedback-category {
+    width: 70vmin;
+  }
+}
 .feedback-page .feedback-container .feedback-category .category-button {
   background: #d9d9d9;
   width: 9rem;
 }
+@media screen and (min-width: 340px) and (max-width: 640px) {
+  .feedback-page .feedback-container .feedback-category .category-button {
+    width: 25vmin;
+    font-size: 0.6rem;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .feedback-page .feedback-container .feedback-category .category-button {
+    width: 20vmin;
+    font-size: 1rem;
+  }
+}
 .feedback-page .feedback-container .feedback-category .category-button:hover, .feedback-page .feedback-container .feedback-category .category-button:active {
   background: linear-gradient(45deg, #08aeea, #2af598);
+}
+@media screen and (min-width: 340px) and (max-width: 640px) {
+  .feedback-page .feedback-container .feedback-category .category-button:hover, .feedback-page .feedback-container .feedback-category .category-button:active {
+    background: none;
+  }
 }
 .feedback-page .feedback-container .feedback-category .active {
   background: linear-gradient(45deg, #08aeea, #2af598);
@@ -82,9 +195,40 @@
   resize: none;
   margin: 2rem 0;
   padding: 1rem;
+  width: 50vw;
+  height: 10vh;
+}
+@media screen and (min-width: 340px) and (max-width: 640px) {
+  .feedback-page .feedback-container textarea {
+    width: 80vmin;
+    height: 20vmax;
+    margin: 1rem 0;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .feedback-page .feedback-container textarea {
+    width: 65vmin;
+    height: 17vmax;
+    margin: 1rem 0;
+  }
 }
 .feedback-page .feedback-container .submit-button {
-  width: 45rem;
+  width: 50vw;
+}
+@media screen and (min-width: 340px) and (max-width: 450px) {
+  .feedback-page .feedback-container .submit-button {
+    width: 90vmin;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 640px) {
+  .feedback-page .feedback-container .submit-button {
+    width: 86vmin;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .feedback-page .feedback-container .submit-button {
+    width: 68vmin;
+  }
 }
 .feedback-page .success {
   display: flex;

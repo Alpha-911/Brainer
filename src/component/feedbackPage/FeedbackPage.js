@@ -63,7 +63,7 @@ function FeedbackPage({isFeedbackSent, setIsFeedbackSent, setQuizCode, setQuizDa
                             </button>
                         </div>
                         <div className="separationBar"/>
-                        <textarea onChange={(e) => setFeedback(e.target.value)} style={{width: '43rem', height: '3rem'}} placeholder={'Your feedback'}/>
+                        <textarea onChange={(e) => setFeedback(e.target.value)} placeholder={'Your feedback'}/>
                         <button disabled={isLoading} onClick={() => sendData()} className={'submit-button'}>{isLoading ? 'Sending' : 'Submit'}</button>
                     </div>
             }

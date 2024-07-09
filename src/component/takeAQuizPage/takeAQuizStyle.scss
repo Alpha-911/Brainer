@@ -25,6 +25,18 @@
     img {
       height: 10vh;
       cursor: pointer;
+
+      @media screen and (min-width: 340px) and (max-width: 450px) {
+        height: 15vmin;
+      }
+
+      @media screen and (min-width: 540px) and (max-width: 640px) {
+        height: 12vmin;
+      }
+
+      @media screen and (min-width: 641px) and (max-width: 1024px) {
+        height: 12vmin;
+      }
     }
 
     h1 {
@@ -34,6 +46,19 @@
       align-items: center;
       color: #d9d9d9;
       font-weight: lighter;
+
+      @media screen and (min-width: 340px) and (max-width: 450px) {
+        display: none;
+        font-size: 1.3rem;
+      }
+
+      @media screen and (min-width: 540px) and (max-width: 640px) {
+        font-size: 1.3rem;
+      }
+
+      @media screen and (min-width: 641px) and (max-width: 1024px) {
+        font-size: 1.8rem;
+      }
     }
 
     a {
@@ -57,7 +82,39 @@
         &:active {
           background: linear-gradient(45deg, #08aeea, #2af598);
         }
+
+        @media screen and (min-width: 340px) and (max-width: 450px) {
+          height: 12vmin;
+          width: 12vmax;
+          margin-right: 1rem;
+        }
+
+        @media screen and (min-width: 540px) and (max-width: 640px) {
+          height: 8vmin;
+          width: 12vmax;
+          margin-right: 1rem;
+        }
+
+        @media screen and (min-width: 641px) and (max-width: 1024px) {
+          height: 8vmin;
+          width: 12vmax;
+          margin-right: 1rem;
+        }
       }
+    }
+
+    @media screen and (min-width: 340px) and (max-width: 450px) {
+      display: flex;
+      justify-content: space-between;
+      height: 20vmin;
+    }
+
+    @media screen and (min-width: 540px) and (max-width: 640px) {
+      height: 15vmin;
+    }
+
+    @media screen and (min-width: 641px) and (max-width: 1024px) {
+      height: 15vmin;
     }
   }
 }
@@ -92,7 +149,8 @@
     background: white;
     margin: 0.5rem;
     padding: 0.8rem;
-    height: 0.6rem;
+    height: 0.5rem;
+    width: 0.5rem;
     border: 1px solid black;
     border-radius: 2rem;
   }
@@ -111,6 +169,20 @@
     color: white;
     border: none;
   }
+
+  @media screen and (min-width: 340px) and (max-width: 450px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 540px) and (max-width: 640px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 641px) and (max-width: 1024px) {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 0.5fr;
+    height: 82vh;
+  }
 }
 
 .question-container {
@@ -126,9 +198,11 @@
     margin-bottom: 3rem;
 
     .qno-question {
-      display: flex;
-      flex-flow: row;
-      align-items: center;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 0.5fr 5fr;
+      align-items: flex-start;
+      justify-content: flex-start;
 
       .qno {
         display: flex;
@@ -160,6 +234,18 @@
         font-weight: normal;
         font-style: normal;
         font-size: 1rem;
+
+        @media screen and (min-width: 340px) and (max-width: 450px) {
+          margin: 1rem 1rem;
+        }
+
+        @media screen and (min-width: 540px) and (max-width: 640px) {
+          margin: 1rem 1rem;
+        }
+
+        @media screen and (min-width: 641px) and (max-width: 1024px) {
+
+        }
       }
     }
 
@@ -170,17 +256,47 @@
       font-style: normal;
       margin-left: 5rem;
 
-      input {
-        cursor: pointer;
-      }
-      .correct {
-        accent-color: #3CBE58;
+      .option {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+
+        input {
+          cursor: pointer;
+        }
+        .correct {
+          accent-color: #3CBE58;
+        }
+
+        label {
+          margin-left: 1rem;
+          font-size: 1rem;
+        }
       }
 
-      label {
-        margin-left: 1rem;
-        font-size: 1rem;
+      @media screen and (min-width: 340px) and (max-width: 450px) {
+        margin-left: 3rem;
+      }
+
+      @media screen and (min-width: 540px) and (max-width: 640px) {
+        margin-left: 3rem;
+      }
+
+      @media screen and (min-width: 641px) and (max-width: 1024px) {
+
       }
     }
+  }
+
+  @media screen and (min-width: 340px) and (max-width: 450px) {
+    margin: 2rem;
+  }
+
+  @media screen and (min-width: 540px) and (max-width: 640px) {
+    margin: 2rem;
+  }
+
+  @media screen and (min-width: 641px) and (max-width: 1024px) {
+    margin: 2.5rem 2.5rem 2.5rem 14rem;
   }
 }

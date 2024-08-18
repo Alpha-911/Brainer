@@ -14,7 +14,7 @@ function TakeAQuizPage({quizCode, setQuizCode, quizData, setQuizData, selectedOp
     useEffect(() => {
         async function fetchQuiz() {
             setIsLoading(true)
-            const response = await fetch(`nearby-eileen-rishu-raj-58de1601.koyeb.app/quiz/${quizCode}`);
+            const response = await fetch(`https://nearby-eileen-rishu-raj-58de1601.koyeb.app/quiz/${quizCode}`);
             const data = await response.json()
             if(data.quiz === null)
                 setQuizFetched(false)

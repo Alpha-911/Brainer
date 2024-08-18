@@ -59,7 +59,7 @@ function codeGenerator() {
 
 function postQuiz(setIsLoading, setFinished, createQuizData) {
     setIsLoading(true);
-    fetch('https://brainer-server-ma2u.onrender.com/quiz', {
+    fetch('nearby-eileen-rishu-raj-58de1601.koyeb.app/quiz', {
         method: 'POST',
         body: JSON.stringify(createQuizData),
         headers: {

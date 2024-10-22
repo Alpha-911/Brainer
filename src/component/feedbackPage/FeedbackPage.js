@@ -6,7 +6,7 @@ import SuccessPage from "./SuccessPage";
 
 function postData(active, category, feedback, setIsLoading, setIsFeedbackSent) {
     setIsLoading(true);
-    fetch('https://nearby-eileen-rishu-raj-58de1601.koyeb.app/feedback', {
+    fetch('https://brainer-server-ma2u.onrender.com/feedback', {
         method: 'POST',
         body: JSON.stringify({
             "rating": active,
